@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Learning JQuery</title>
+    <style>
+        a.test {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video" align="center">
+        <img src="images/placeholder.jpg" />
+    </div>
+    <div class="buttoms" align="center">
+
+        <img class="left" src="images/left.jpg" />
+        <img class="right" src="images/right.jpg" />
+        
+        <script src="jquery.js"></script>
+        <script>
+            $( document ).ready(function() {
+
+                var btnLeft = document.querySelector("img.left");
+                var btnRight = document.querySelector("img.right");
+
+                /*
+                    "Left" Button
+                */
+                $(btnLeft).click(function( event ) {
+                    alert("Left");
+                });
+
+                /*
+                    "Right" Button
+                */
+                $(btnRight).click(function( event ) {
+                    alert("Right");
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
